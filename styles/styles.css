@@ -1,0 +1,101 @@
+/* ---------- CSS Variables for Color Palette ---------- */
+:root {
+  --primary-color: #184e77;   /* Dark blue - brand color */
+  --secondary-color: #83c5be; /* Light blue - background */
+  --accent1-color: #003366;   /* Deep navy - footer/nav */
+  --accent2-color: #f9f9f9;   /* Light gray - page background */
+}
+
+/* ---------- Base Styles ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: var(--accent2-color);
+  color: #333;
+  padding: 1rem;
+}
+
+/* ---------- Typography ---------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  color: var(--primary-color);
+}
+
+/* ---------- Header ---------- */
+header {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  color: white;
+  text-align: left;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+  background-color: var(--accent1-color);
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+}
+
+/* ---------- Images ---------- */
+img {
+  width: 100px;
+  height: auto;
+  border: 1px solid black;
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
+  float: right;
+  margin: 0 0 1rem 1rem;
+}
+
+/* ---------- Aside Overlay Styling ---------- */
+aside {
+  width: 20em;
+  text-align: left;
+  position: relative;
+}
+
+aside img {
+  width: 100%;
+  height: auto;
+}
+
+aside h2 {
+  position: absolute;
+  top: 20px;
+  left: 150px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* ---------- Utility Box ---------- */
+.box {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  background-color: var(--secondary-color);
+  color: var(--accent1-color);
+}

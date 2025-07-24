@@ -1,0 +1,105 @@
+:root {
+  --primary-color: #184e77;     /* Deep Blue */
+  --secondary-color: #83c5be;   /* Light Teal */
+  --accent1-color: #003366;     /* Navy Blue */
+  --accent2-color: #f9f9f9;     /* Light Gray */
+  --heading-font: "Lato";
+  --body-font: "Nunito+sans";
+}
+
+/* Reset Box Model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: var(--accent2-color);
+}
+
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* Navigation */
+nav {
+  background-color: var(--accent1-color);
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 1rem;
+  max-width: 700px;
+  box-shadow: 0 0 10px gray;
+}
+
+.hero article img {
+  float: right;
+  width: 100px;
+  margin-left: 1rem;
+  box-shadow: 0 0 5px gray;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.socialmedia a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.socialmedia img {
+  width: 30px;
+  height: auto;
+}
