@@ -22,6 +22,11 @@ body {
 }
 
 /* ---------- Typography ---------- */
+h1 {
+  color: var(--primary-color); 
+  font-family: 'Merriweather', serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif;
   color: var(--primary-color);
@@ -64,15 +69,41 @@ img {
   margin: 0 0 1rem 1rem;
 }
 
-/* ---------- Aside Overlay Styling ---------- */
+/
+img {
+  width: 50px;
+  height: auto;
+  border: 1px solid black;
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
+}
+
+/* ---------- Main Section ---------- */
+main {
+  max-width: 800px; 
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* ---------- Paragraph fix ---------- */
+p {
+  padding: 0; 
+}
+
+/* ---------- Aside Styling ---------- */
 aside {
-  width: 20em;
-  text-align: left;
+  width: 20em; 
+  margin: 1rem auto;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  color: #333;
   position: relative;
+  text-align: left;
 }
 
 aside img {
-  width: 100%;
+  width: 200px;
   height: auto;
 }
 
@@ -84,14 +115,15 @@ aside h2 {
 
 /* ---------- Footer ---------- */
 footer {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color); 
   color: white;
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
+  margin-top: 2rem; 
+  border-top: 2px solid #ccc; 
 }
 
-/* ---------- Utility Box ---------- */
+
 .box {
   margin: 1rem;
   padding: 1rem;
